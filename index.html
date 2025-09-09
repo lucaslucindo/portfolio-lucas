@@ -106,7 +106,17 @@
   <main id="content" class="content">
     <!-- Início / Hero -->
     <section id="inicio" class="hero">
-      <img class="avatar" src="assets/profile.jpg" alt="Foto de perfil de Lucas Lucindo" />
+            
+      <!-- avatar clicável -->
+      <img src="assets/profile.jpg" alt="Foto de perfil de Lucas Lucindo" class="avatar" id="avatarImg">
+
+      <!-- modal para expandir a foto -->
+      <div id="avatarModal" class="modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="avatarModalImg">
+        <div class="modal-caption">Lucas Lucindo</div>
+      </div>
+
       <div class="hero-text">
         <h1>Desenvolvedor Full Stack Júnior</h1>
         <p>
@@ -187,10 +197,12 @@
         </article>
 
         <article class="card certificacoes">
-          <h3>Certificações (exemplos)</h3>
+          <h3>Certificações</h3>
           <ul>
-            <li>Git e GitHub</li>
-            <li>Desenvolvimento Web</li>
+            <li>Dev Experience de 2021</li>
+            <li>Entendendo e documentando REST / RESTful APis</li>
+            <li>Microsoft Azure Fundamentals | AZ-900</li>
+            <li>C# e Lógica de Programação Orientada a Objetos</li>
           </ul>
         </article>
       </div>

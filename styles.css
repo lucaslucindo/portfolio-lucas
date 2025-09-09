@@ -524,3 +524,50 @@ details ul{ padding-left:1rem; margin:.25rem 0 .5rem; display:grid; gap:.25rem; 
 
 /* segurança extra: nada gera barra horizontal */
 html, body{ overflow-x: hidden; }
+
+/* Avatar padrão */
+.avatar{
+  cursor: pointer;
+  transition: transform .25s ease;
+}
+.avatar:hover{ transform: scale(1.05); }
+
+/* ===== Modal ===== */
+.modal{
+  display: none;
+  position: fixed; z-index: 999;
+  inset: 0;
+  background-color: rgba(0,0,0,0.9);
+  padding-top: 60px;
+}
+
+.modal-content{
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 80vh;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,.5);
+  animation: zoomIn .3s;
+}
+
+@keyframes zoomIn{
+  from{ transform: scale(.8); opacity: 0; }
+  to{ transform: scale(1); opacity: 1; }
+}
+
+.modal-caption{
+  margin: 1rem auto 0;
+  text-align: center;
+  color: #ccc;
+  font-size: 1rem;
+}
+
+/* botão de fechar */
+.modal-close{
+  position: absolute; top: 20px; right: 35px;
+  color: #fff; font-size: 40px; font-weight: bold;
+  cursor: pointer;
+  transition: .2s;
+}
+.modal-close:hover{ color: var(--brand); }

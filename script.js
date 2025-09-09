@@ -121,3 +121,26 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     }
   });
 });
+
+// ===== Modal da foto de perfil =====
+(() => {
+  const avatar = document.getElementById("avatarImg");
+  const modal = document.getElementById("avatarModal");
+  const modalImg = document.getElementById("avatarModalImg");
+  const closeBtn = document.querySelector(".modal-close");
+
+  if(avatar && modal && modalImg){
+    avatar.addEventListener("click", () => {
+      modal.style.display = "block";
+      modalImg.src = avatar.src;
+    });
+
+    closeBtn.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+
+    modal.addEventListener("click", (e) => {
+      if(e.target === modal){ modal.style.display = "none"; }
+    });
+  }
+})();
