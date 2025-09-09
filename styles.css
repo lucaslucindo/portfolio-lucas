@@ -571,3 +571,15 @@ html, body{ overflow-x: hidden; }
   transition: .2s;
 }
 .modal-close:hover{ color: var(--brand); }
+
+h3{
+  display: flex;
+  align-items: center;
+  gap: .5rem;  /* espaço entre ícone e texto */
+}
+
+.icon-title{
+  width: 22px;    /* ajuste o tamanho */
+  height: 22px;
+  object-fit: contain;
+}
