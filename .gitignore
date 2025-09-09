@@ -1,0 +1,15 @@
+# SO
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+.history/
+
+# Logs
+*.log
+npm-debug.log*
+
+# (mantido caso crie demos com build futuramente)
+dist/
+node_modules/

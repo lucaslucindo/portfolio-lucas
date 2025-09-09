@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Bazar Virtual (API + Swagger)",
+    "category": "api",
+    "stack": "Node.js • Express • MongoDB • Swagger",
+    "description": "CRUD de roupas usadas: clientes, estoque, vendedores. Documentação com Swagger.",
+    "demo": "#",
+    "repo": "https://github.com/lucaslucindo",
+    "image": "assets/placeholder.png"
+  },
+  {
+    "title": "Portal de Notícias (Front-end)",
+    "category": "web",
+    "stack": "HTML • CSS • JavaScript",
+    "description": "Landing de notícias responsiva com cards e busca.",
+    "demo": "#",
+    "repo": "https://github.com/lucaslucindo",
+    "image": "assets/placeholder.png"
+  },
+  {
+    "title": "Emissor de Boletos (WebForms)",
+    "category": "outros",
+    "stack": ".NET 4.8 WebForms • SQL Server",
+    "description": "Projeto legado didático com telas de cadastro e geração de boletos.",
+    "demo": "#",
+    "repo": "https://github.com/lucaslucindo",
+    "image": "assets/placeholder.png"
+  }
+]
