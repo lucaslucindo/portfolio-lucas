@@ -6,7 +6,7 @@
     "description": "CRUD de roupas usadas: clientes, estoque, vendedores. Documentação com Swagger.",
     "demo": "#",
     "repo": "https://github.com/lucaslucindo",
-    "image": "assets/placeholder.png"
+    "image": "assets/placeholder.jpg"
   },
   {
     "title": "Portal de Notícias (Front-end)",
@@ -15,7 +15,7 @@
     "description": "Landing de notícias responsiva com cards e busca.",
     "demo": "#",
     "repo": "https://github.com/lucaslucindo",
-    "image": "assets/placeholder.png"
+    "image": "assets/placeholder.jpg"
   },
   {
     "title": "Emissor de Boletos (WebForms)",
@@ -24,6 +24,6 @@
     "description": "Projeto legado didático com telas de cadastro e geração de boletos.",
     "demo": "#",
     "repo": "https://github.com/lucaslucindo",
-    "image": "assets/placeholder.png"
+    "image": "assets/placeholder.jpg"
   }
 ]

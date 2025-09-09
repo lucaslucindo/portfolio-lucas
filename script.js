@@ -12,29 +12,34 @@
   });
 })();
 
-// Sidebar toggle (mobile)
+// Sidebar toggle (mobile) com backdrop e resize-safe
 (() => {
   const sidebar = document.getElementById("sidebar");
   const btn = document.getElementById("sidebarToggle");
-  const mq = window.matchMedia("(max-width: 960px)");
+  const backdrop = document.getElementById("sidebarBackdrop");
+  const mq = window.matchMedia("(max-width: 959.98px)");
 
-  function setState(){
-    const mobile = mq.matches;
-    sidebar.classList.toggle("collapsed", !mobile); // desktop: visível
-    sidebar.classList.toggle("open", mobile && sidebar.classList.contains("open"));
-    btn.setAttribute("aria-expanded", !(mobile && !sidebar.classList.contains("open")));
+  function closeDrawer(){
+    sidebar.classList.remove("open");
+    document.body.classList.remove("no-scroll");
   }
-  setState();
-  mq.addEventListener("change", setState);
 
-  btn.addEventListener("click", () => {
-    if(mq.matches){ // mobile
-      sidebar.classList.toggle("open");
-      btn.setAttribute("aria-expanded", sidebar.classList.contains("open"));
-    } else { // desktop
-      sidebar.classList.toggle("collapsed");
-      btn.setAttribute("aria-expanded", !sidebar.classList.contains("collapsed"));
-    }
+  function openDrawer(){
+    sidebar.classList.add("open");
+    document.body.classList.add("no-scroll");
+  }
+
+  btn?.addEventListener("click", () => {
+    if (!mq.matches) return;  // só age no mobile
+    if (sidebar.classList.contains("open")) closeDrawer();
+    else openDrawer();
+  });
+
+  backdrop?.addEventListener("click", closeDrawer);
+
+  // Fechar ao trocar para desktop
+  mq.addEventListener("change", (e) => {
+    if (!e.matches) closeDrawer();
   });
 })();
 

@@ -1,20 +1,31 @@
-<<<<<<< HEAD
-# portfolio-lucas
-=======
-**LinkedIn:** https://www.linkedin.com/in/lucas-lucindo-81a11750/
+# 🌐 Portfolio Lucas Lucindo
 
-# Currículo & Portfólio — Lucas Lucindo da Silva
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Online-brightgreen)](https://lucaslucindo.github.io/portfolio-lucas/) Portfólio e currículo digital desenvolvido em **HTML, CSS e JavaScript**, hospedado no GitHub Pages.  
+O objetivo é apresentar minha trajetória profissional, principais projetos e habilidades técnicas em um formato moderno e responsivo.
 
-Landing Page estática (HTML/CSS/JS) hospedada no GitHub Pages.
+---
 
-## Editar
-- Troque `assets/profile.jpg` pela sua foto.
-- Edite seções de texto no `index.html`.
-- Liste seus projetos em `projects.json` (campos: title, category [web|api|outros], stack, description, demo, repo, image).
+## ✨ Funcionalidades
 
-## Rodar localmente
-Use a extensão **Live Server** no VS Code (ou `python -m http.server`) para evitar bloqueio de `fetch` em `projects.json`.
+- ✅ **Currículo digital** com resumo profissional, experiências, formação e certificações.  
+- ✅ **Portfólio de projetos** filtráveis por categoria (Web, APIs, Outros).  
+- ✅ **Design responsivo** (desktop e mobile).  
+- ✅ **Tema claro/escuro** com alternância de cores.  
+- ✅ **Download de currículo em PDF** diretamente pelo site.  
+- ✅ **Integração com LinkedIn e GitHub** para networking.  
+- ✅ **Menu lateral expansivo** e **menu superior** com comportamento adaptativo.  
 
-## Licença
-MIT
->>>>>>> 45acd2e (feat: landing page currículo + portfólio)
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- **HTML5** + **CSS3** (Flexbox, Grid, variáveis de tema)  
+- **JavaScript** (ES6+, manipulação DOM, fetch para JSON)  
+- **GitHub Pages** para hospedagem  
+- **Git/GitHub** para versionamento de código  
+
+---
+
+## 👨‍💻 Desenvolvido por Lucas Lucindo da Silva
+
+- 👉 Veja online: https://www.linkedin.com/in/lucas-lucindo-81a11750/
